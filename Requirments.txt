@@ -1,5 +1,4 @@
-For this project we utilize the following packages
-
+For this project we utilize the following packages on python
 - Sqlite 3
 - Csv
 - Flask
