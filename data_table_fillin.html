@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            table {
+                margin: 0 auto;
+                border-collapse: collapse;
+                width: 80%; 
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Housing Data</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>State</th>
+                    <th>Town</th>
+                    <th>House Type</th>
+                    <th>Bedrooms</th>
+                    <th>Bathrooms</th>
+                    <th>Toilets</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for n in housing %}
+                    <tr>
+                        <td>{{ n[0] }}</td>
+                        <td>{{ n[1] }}</td>
+                        <td>{{ n[2] }}</td>
+                        <td>{{ n[3] }}</td>
+                        <td>{{ n[4] }}</td>
+                        <td>{{ n[5] }}</td>
+                        <td>{{ n[6] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+    </body>
+</html>

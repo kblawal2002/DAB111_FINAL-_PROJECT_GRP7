@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        h2 {
+            font-size: 35px; 
+            margin: 20px 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        li {
+            margin: 0 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome To Nigeria's Largest Housing Website</h2>
+    
+    <ul>
+        <li><a href="{{url_for('about')}}">About page</a></li>
+        <li><a href="{{url_for('data')}}">Data page</a></li>
+    </ul>
+  
+</body>
+</html>
