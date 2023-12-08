@@ -1,0 +1,7 @@
+For this project we utilize the following packages
+
+- Sqlite 3
+- Csv
+- Flask
+- Pathlib
+- Pandas
